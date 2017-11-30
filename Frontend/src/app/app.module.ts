@@ -1,19 +1,21 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule }  from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { MatInputModule } from '@angular/material'
-
-
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { AppComponent } from './app.component';
+import {MatListModule} from '@angular/material/list';
+import {HeaderComponent} from "./components/header-component/header.component";
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-      MatInputModule
+    MatSidenavModule,
+    MatListModule
   ],
   declarations: [
-    AppComponent
+    AppComponent,
+      HeaderComponent
   ],
   bootstrap: [ AppComponent ]
 })
