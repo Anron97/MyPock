@@ -5,17 +5,21 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import { AppComponent } from './app.component';
 import {MatListModule} from '@angular/material/list';
 import {HeaderComponent} from "./components/header-component/header.component";
+import {MenuComponent} from "./components/menu-component/menu.component";
+import {MatIconModule} from "@angular/material";
 
 @NgModule({
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatIconModule
   ],
   declarations: [
     AppComponent,
-      HeaderComponent
+      HeaderComponent,
+      MenuComponent
   ],
   bootstrap: [ AppComponent ]
 })
