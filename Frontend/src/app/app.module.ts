@@ -7,6 +7,10 @@ import {MatListModule} from '@angular/material/list';
 import {HeaderComponent} from "./components/header-component/header.component";
 import {MenuComponent} from "./components/menu-component/menu.component";
 import {MatIconModule} from "@angular/material";
+import {MyListComponent} from "./components/my-list-component/mylist.component";
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonModule} from '@angular/material/button';
+import {MaterialService} from "./services/material.service";
 
 @NgModule({
   imports: [
@@ -14,12 +18,18 @@ import {MatIconModule} from "@angular/material";
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule,
+    MatButtonModule
   ],
   declarations: [
     AppComponent,
       HeaderComponent,
-      MenuComponent
+      MenuComponent,
+      MyListComponent
+  ],
+  providers: [
+      MaterialService
   ],
   bootstrap: [ AppComponent ]
 })
