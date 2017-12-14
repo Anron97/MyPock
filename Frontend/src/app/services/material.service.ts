@@ -7,11 +7,11 @@ export class MaterialService{
     }
 
     getMaterials() {
-        return {
+        return [{
             title: "Title",
             img: "/src/assets/img/background-card.jpg",
             link: "mylink.ru",
             isFavorite: false
-        }
+        }]
     }
 }

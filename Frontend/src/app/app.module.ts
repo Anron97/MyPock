@@ -11,6 +11,7 @@ import {MyListComponent} from "./components/my-list-component/mylist.component";
 import {MatCardModule} from '@angular/material/card';
 import {MatButtonModule} from '@angular/material/button';
 import {MaterialService} from "./services/material.service";
+import {MaterialComponent} from "./components/material-component/material.component";
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import {MaterialService} from "./services/material.service";
     AppComponent,
       HeaderComponent,
       MenuComponent,
-      MyListComponent
+      MyListComponent,
+      MaterialComponent
   ],
   providers: [
       MaterialService
