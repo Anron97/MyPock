@@ -4,7 +4,16 @@
     </mat-card-header>
     <img mat-card-image src="{{material.img}}" alt="image">
     <mat-card-actions>
-        <a href="#" style="text-decoration: underline">{{material.link}}</a>
-        <button mat-button>SHARE</button>
+       <div class="container-footer">
+           <div class="row">
+               <div class="col-xs-6">
+                   <a href="#" class="link">{{material.link}}</a>
+               </div>
+               <div class="col-xs-6" style="text-align: right">
+                   <a class="iconBtn"><i class="material-icons">delete</i></a>
+                   <a class="iconBtn"><i class="material-icons">star</i></a>
+               </div>
+           </div>
+       </div>
     </mat-card-actions>
 </mat-card>
